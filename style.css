@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 143, 199);
+  margin: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  top: 0;
+}
+
+.pagina{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 900px;
+}
+
+#nome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+  align-content: center;
+}
+
+#descricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  color: grey;
+  font-size: small;
+  text-align: center;
+  align-content: center;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  padding: 35px;
+  border-radius: 20px;
+  border-color: #666;
+  background-color: white;
+  border-width: 2px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  width: 80%;          /* Reduz o tamanho de forma responsiva */
+  max-width: 650px;    /* Mas ainda impõe um limite se a tela for muito grande */
+  box-sizing: border-box; /* Garante que padding não aumente largura */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+.logo-topo {
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+}
+
+.btn-outline-success {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 8px;
+  border-width: 3px;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  height: 45px;
+  font-size: 1rem;
+}
+
+.cardapio {
+  display: flex;
+  margin: 15px auto 0 auto;
+  border-radius: 8px;
+  border-width: 3px;
+  border-style: solid;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  color: rgb(255, 143, 199);
+  border-color: rgb(255, 143, 199);
+  font-size: 1rem;
+}
+
+.cardapio:hover {
+  background-color: rgb(255, 143, 199);
+  color: white;
+}
+
+.bi-signal,
+.bi-journal-bookmark {
+  margin-right: 8px;
+}
+
+.bi-heart-fill {
+  margin-left: 5px;
+}
+
+  .btn-outline-success,
+  .cardapio {
+    width: 100%;
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
+  .logo-topo {
+    max-width: 150px;
+  }
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 5%;  /* Menos padding horizontal */
+    width: 90%;        /* Ajusta para 90% da largura da tela */
+    flex-direction: column; /* Se quiser, empilha conteúdo verticalmente */
+  }
+}
